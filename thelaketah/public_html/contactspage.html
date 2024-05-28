@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./assets/other/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>ContactsPage</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C500" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tourney%3A400" />
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/contactspage.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
+
+  <!-- JS -->
+  <script src="./scripts/catalogpage/catalog.js"></script>
+  <script src="./scripts/chatbot/chatbot.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HeaderCode -->
+  <div class="mainpage">
+    <div class="header">
+
+
+      <div class="mainpage-buttonbox-mobile">
+        <!-- Группа с тремя полосками около кнопки главной страницы  -->
+        <div class="mainpagegroup">
+          <div class="mainrectangle-1">
+          </div>
+          <div class="mainrectangle-2">
+          </div>
+          <div class="mainrectangle-3">
+          </div>
+        </div>
+
+        <div class="mainbuttontext">ГЛАВНАЯ</div>
+      </div>
+
+      <!-- ГЛАВНАЯ -->
+      <div class="mainpage-buttonbox" onclick="window.location.href='index.html'">
+        <!-- Группа с тремя полосками около кнопки главной страницы  -->
+        <div class="mainpagegroup">
+          <div class="mainrectangle-1">
+          </div>
+          <div class="mainrectangle-2">
+          </div>
+          <div class="mainrectangle-3">
+          </div>
+        </div>
+
+        <div class="mainbuttontext">ГЛАВНАЯ</div>
+      </div>
+
+      <!-- КОНТАКТЫ -->
+      <div class="contactsbox" onclick="window.location.href='contactspage.html'">
+        <div class="contacts">КОНТАКТЫ</div>
+      </div>
+
+      <!-- InnerShop -->
+      <span class="innershop" onclick="window.location.href='index.html'">InnerShop</span>
+
+
+      <!-- КАТАЛОГ -->
+      <div class="catalogbox" onclick="window.location.href='catalogpage.html'">
+        <div class="catalog">КАТАЛОГ</div>
+      </div>
+
+      <!-- КОРЗИНА -->
+      <div id="counter" class="cartbox"></div>
+
+    </div>
+    <div id="shopping"></div>
+    <div class="contactcenter">Контакт центр</div>
+    <p class="number1">+7 (999) 999-99-99</p>
+    <p class="number2">+7 (888) 888-88-88</p>
+    <div class="worktime">Ежедневно с 9:00 до 22:00 по Московскому времени</div>
+    <div class="innershopinfo">
+      Магазин InnerShop
+      <br />
+      Город, Улица, Дом
+      <br />
+      Режим работы – с 10:00 до 22:00, ежедневно
+    </div>
+
+    <div class="divider" id="section2"></div>
+    <section class="shop" src="./assets/other/shop.png"></section>
+    <div class="divider"></div>
+    <span class="emailtext1">Интересующие вас вопросы Вы можете написать нам на почту</span><br>
+    <span class="emailtext2">store@innershop.ru</span>
+
+
+
+    <!-- FootCode -->
+    <div class="foot">
+      <div class="footcontent">
+        <div class="networkgroup">
+          <p class="networkgrouptext">Социальные сети</p>
+          <div class="vkgroup">
+            <img class="vkpng" src="./assets/socialnetwork/vk.png" />
+            <p class="vktext">ВКонтакте</p>
+          </div>
+          <div class="othernetwork">
+            <div class="ytgroup">
+              <img class="ytpng" src="./assets/socialnetwork/yt.png" />
+              <p class="yttext">YouTube</p>
+            </div>
+            <div class="tggroup">
+              <img class="tgpng" src="./assets/socialnetwork/tg.png" />
+              <p class="tgtext">Telegram</p>
+            </div>
+          </div>
+        </div>
+        <div class="netgroup">
+          <p class="nettext">Интернет-магазин</p>
+          <p class="netphone1">+7 (999) 999-99-99</p>
+          <p class="netphone2">+7 (888) 888-88-88</p>
+        </div>
+        <div class="community">
+          <p class="communitytext1">Поддержка</p>
+          <p class="communitytext2">Помощь покупателю</p>
+          <p class="communitytext3">Возврат</p>
+          <p class="communitytext4">Партнеры</p>
+        </div>
+        <div class="address">
+          <p class="addresstext1">Адреса магазинов</p>
+          <p class="addresstext2">Город, Улица, Дом</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FooterCode -->
+    <div class="footer">
+      <div class="innershop2023">© INNERSHOP, 2023</div>
+      <div class="footertext1">Пользовательское <br> соглашение</div>
+      <img class="paynaments" src="./assets/other/paynaments.png" />
+      <div class="footertext2">Политика <br> конфиденциальности</div>
+      <div class="footertext3">О Компании</div>
+    </div>
+
+    <!-- Chat-Bot -->
+    <button class="chatbot-toggler">
+      <span class="toggle-on">✉</span>
+      <span class="toggle-off">✖</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Чат-Бот</h2>
+        <div class="chatbot-close"></div>
+      </header>
+      <ul class="chatbox">
+        <li class="chat income">
+          <p>Привет!</p>
+        </li>
+        <li class="chat outcome">
+        </li>
+      </ul>
+      <div class="chatbot-input">
+        <textarea placeholder="Введите сообщение..." required></textarea>
+        <span class="send-btn">➤</span>
+      </div>
+    </div>
+
+    <ul class="menu">
+      <li onclick="window.location.href='index.html'"><a>Главная</a>
+      <li onclick="window.location.href='contactspage.html'"><a>Контакты</a>
+      <li onclick="window.location.href='catalogpage.html'"><a>Каталог</a>
+      <li><a>Социальные сети</a>
+      <li><a>Интернет-магазин</a>
+      <li><a>Поддержка</a>
+      <li><a>Адреса магазинов</a>
+      <li><a>Пользовательское соглашение</a>
+      <li><a>Политика конфиденциальности</a>
+    </ul>
+
+  </div>
+
+  <!-- More JS -->
+  <script src="./scripts/mobile/mobilemenu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/catalogpage/root.js"></script>
+  <script src="./utils/localStorageUtils.js"></script>
+  <script src="./scripts/catalogpage/shopping.js"></script>
+  <!-- <script src="./scripts/catalogpage/catalogpage.js"></script> -->
+  <script src="./scripts/catalogpage/header.js"></script>
+  </div>
+</body>
