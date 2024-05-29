@@ -1,0 +1,197 @@
+.catalog-container {
+    position: relative;
+    display: grid;
+    left: 9%;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: -5rem;
+
+}
+
+.catalog-element_working {
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.catalog-element_working:hover {
+    box-shadow: 0 0.4rem 0.4rem rgba(255, 255, 255, 0.2);
+}
+
+.catalog-element__btnbox{
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.arrows {
+    position: relative;
+    display: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.05);
+    align-items: center;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.arrows_active {
+    display: flex;
+    pointer-events:initial;
+}
+
+.larw, .rarw {
+    position: relative;
+    right: 5px;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.catalog-element {
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.catalog-element__img {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.catalog-element__name {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    line-height: 2rem;
+    margin-top: 5%;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Roboto;
+    text-shadow: -4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-element__price {
+    position: relative;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Roboto;
+    text-shadow: -4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-element__btn {
+    position: relative;
+    background-color: black;
+    font-family: Roboto;
+    text-shadow: -4px 4px 3px rgba(255, 255, 255, 0.4);
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 3rem;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.catalog-element__btn_active {
+    position: relative;
+    background-color: black;
+    font-family: Roboto;
+    text-shadow: -4px 4px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: black;
+    border-radius: 5px;
+    height: 3rem;
+    width: 100%;
+    pointer-events: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.ctlg {
+    margin-top: 5rem;
+}
+
+.limitgroup {
+    position: relative;
+    width: fit-content;
+    left: 12.5%;
+    margin-top: 4rem;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.limittext {
+    position: relative;
+    margin-right: 10px;
+    font-family: Roboto;
+    text-shadow: -4px 4px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: black;
+}
+
+.limit {
+    position: relative;
+    font-family: Roboto;
+    text-shadow: -4px 4px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.page {
+    position: relative;
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    vertical-align: center;
+    margin-bottom: 3rem;
+}
+
+#pagecount {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Roboto;
+    text-shadow: -4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+#leftbtn, #rightbtn {
+    align-items: center center;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1/1; 
+}
